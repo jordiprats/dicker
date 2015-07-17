@@ -1,0 +1,13 @@
+#!/bin/bash
+
+showdicker()
+{
+	echo -ne ' 8'
+	for i in $(seq 1 $(($(tput cols)-8))); do echo -ne =; sleep 0.005; done
+	echo 'D~~~ '
+}
+
+showdicker
+docker $@
+showdicker
+
