@@ -1,0 +1,8 @@
+meta:
+  description: dicker, enlarge you docker experience
+  vendor: jordiprats
+  maintainer: jordiprats
+files:
+  "/usr/bin/dicker":
+    file: dicker
+    mode: "0755"
