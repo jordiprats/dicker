@@ -16,6 +16,11 @@ fi
 
 if [ -z "$DOCKERBIN" ];
 then
+	DOCKERBIN=$(which nerdctl 2>/dev/null)
+fi
+
+if [ -z "$DOCKERBIN" ];
+then
 	DOCKERBIN="docker"
 fi
 
